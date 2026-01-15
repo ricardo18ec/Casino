@@ -4,13 +4,14 @@ public class Juego {
 
 
     // Atributos
-    public repartirCartas(): 
-    public determinarGanador():Ganador():
-    public comenzarJuego():
-    public terminarJuego():
-    public pausarJuego():
-    public entregarPremio():
-    public realizarApuesta(double: monto)
-    public validarApuesta(double: monto)
+    public void repartirCartas()
+    public void determinarGanador();
+    public void comenzarJuego();
+    public void terminarJuego();
+    public void pausarJuego();
+    public void entregarPremio();
+    public void realizarApuesta(double monto);
+    public void validarApuesta(double monto);
+    
 
 }
