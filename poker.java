@@ -9,6 +9,16 @@ public class poker {
     private Cartas[] cartas;
     private int cantidadMinimaApostar;
 
+    //Constructores
+    public poker(String Nombre, int numeroJugadores, Dealer dealer, Jugador[] jugadores, Cartas[] cartas, int cantidadMinimaApostar) {
+        this.Nombre = Nombre;
+        this.numeroJugadores = numeroJugadores;
+        this.dealer = dealer;
+        this.jugadores = jugadores;
+        this.cartas = cartas;
+        this.cantidadMinimaApostar = cantidadMinimaApostar;
+    }
+
     //metodos
     public void repartirCartas(){
         // Metodo para repartir cartas a los jugadores
