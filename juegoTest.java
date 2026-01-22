@@ -1,4 +1,5 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 public class juegoTest {
@@ -15,10 +16,16 @@ public class JuegoTest {
     }
 
     @Test
-    boolean validarCantidadApuestaTest(){
+    public boolean validarApuesta(){
         controller controller = new controller();
-        
+        boolean resultado = controller.validarApuesta(60);
+        assertEquals(false, resultado);
+        return true;
     }
+
+    
+
+
 }
 
 }
