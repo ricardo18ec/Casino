@@ -1,11 +1,13 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 public class ControllerTest {
 
     @Test
     void juegoNuevoTest() {
-        controller controller = new controller();
+        Controller controller = new Controller();
 
         boolean resultado = controller.juegoNuevo("poker", 100);
 
@@ -14,7 +16,7 @@ public class ControllerTest {
 
     @Test
     void validarApuestaTest() {
-        controller controller = new controller();
+        Controller controller = new Controller();
 
         boolean resultado = controller.validarApuesta(50);
 
@@ -22,11 +24,11 @@ public class ControllerTest {
     }
 
     @Test
-    void verificarDepositoTest() {
-        controller controller = new controller();
+    void validarCantidadApuestaTest() {
+        Controller controller = new Controller();
 
-        boolean resultado = controller.verificarDeposito(200);
+        int resultado = controller.validarCantidadApuesta(100);
 
-        assertTrue(resultado);
+        assertEquals(100, resultado);
     }
 }
