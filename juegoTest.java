@@ -1,24 +1,32 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class juegoTest {
-
-
-public class JuegoTest {
+public class ControllerTest {
 
     @Test
-    boolean juegoNuevoTest() {
+    void juegoNuevoTest() {
         controller controller = new controller();
+
         boolean resultado = controller.juegoNuevo("poker", 100);
-        assertEquals(false, resultado);
-        return true;
+
+        assertTrue(resultado);
     }
 
     @Test
-    boolean validarCantidadApuestaTest(){
+    void validarApuestaTest() {
         controller controller = new controller();
-        
-    }
-}
 
+        boolean resultado = controller.validarApuesta(50);
+
+        assertTrue(resultado);
+    }
+
+    @Test
+    void verificarDepositoTest() {
+        controller controller = new controller();
+
+        boolean resultado = controller.verificarDeposito(200);
+
+        assertTrue(resultado);
+    }
 }
